@@ -58,6 +58,17 @@ def main():
     print results + '\n'
 
 if __name__ == '__main__':
-    main()
-
+   main()
+   """print my_info()"""
+   """print reader.read_movie_lens_data()"""
+   print reader.give_me_movie_id('story', movie_dictionary)
+   print reader.give_me_movie_id('GoldenEye', movie_dictionary)
+   ratings, movie_dictionary, user_ids, item_ids, movie_names = reader.read_movie_lens_data()
+   print len(ratings)
+   i = 0
+   for x in range(0, len(ratings)):"search full db, when find, sum ratings
+       i += 1
+       """print ratings[i], movie_names[i]"""
+   print "i %d" % (i)
+   print ratings[1], movie_names[1]
 
